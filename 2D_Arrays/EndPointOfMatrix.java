@@ -15,7 +15,7 @@ public class EndPointOfMatrix {
         int i=0;
         int j=0;
         while(true){
-            dir=(a[i][j]+dir)%4;                      
+            dir=(a[i][j]+dir)%4;                  //Changing direction after every occurence of 1    
             
             if(dir==0){
                 j++;
@@ -33,7 +33,8 @@ public class EndPointOfMatrix {
                 i--;
             }
             
-            if(i<0){
+            //Conditions to terminate i and j are out of matrix
+            if(i<0){     
                 i++;
                 break;
             }
