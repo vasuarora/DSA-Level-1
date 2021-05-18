@@ -4,7 +4,7 @@ public class BinarySearch {
         int lo=0;
         int hi=ar.length-1;
         while(lo<=hi){
-            int mid=(lo+hi)/2;
+            int mid=(lo+hi)/2;                       //middle index of array
             if(ar[mid]==key){
                 return mid;
             }

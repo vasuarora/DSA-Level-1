@@ -13,7 +13,7 @@ public class BrokenEconomy {
         int lo=0;
         int hi=arr.length-1;
         while(lo<=hi){
-            int mid=(lo+hi)/2;
+            int mid=(lo+hi)/2;                               //middle index of array
             if(key==arr[mid]){
                 break;
             }

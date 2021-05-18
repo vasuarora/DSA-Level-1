@@ -11,7 +11,7 @@ public class BarChart {
         
         int max=Integer.MIN_VALUE;
         
-        for(int i=0;i<n;i++){
+        for(int i=0;i<n;i++){                   //finding max value in array
             if(arr[i]>max){
                 max=arr[i];
             }
