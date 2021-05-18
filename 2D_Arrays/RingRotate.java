@@ -5,8 +5,8 @@ public class RingRotate {
         int n=scn.nextInt();
         int m=scn.nextInt();
         int[][] arr=new int[n][m];
-        for(int i=0;i<n;i++){
-            for(int j=0;j<m;j++){
+        for(int i=0;i<arr.length;i++){
+            for(int j=0;j<arr[0].length;j++){
                 arr[i][j]=scn.nextInt();
             }
         }
@@ -17,106 +17,113 @@ public class RingRotate {
         display(arr);
     }
     
-    public static void shellRotate(int[][] arr,int s,int r){
+    public static void shellRotate(int [][] arr,int s,int r){
+        int[] a=fill1dArray(arr,s);        //fill shell elements in 1d array
         
-        int[] a1=fill1dArray(arr,s);
+        rotateArray(a,r);                  //rotate the array
         
-        rotate(a1,r);
-        
-        fill2dArray(a1,s,arr);
+        fill2dArray(arr,a,s);              //fill the rotated 1d array in 2d array
     }
     
-    public static int[] fill1dArray(int[][]arr,int s){
+    public static int[] fill1dArray(int[][] arr,int s){
         int rs=s-1;
-        int re=arr.length-s;
         int cs=s-1;
+        int re=arr.length-s;
         int ce=arr[0].length-s;
+        
+        int tne=2*(re-rs)+2*(ce-cs);    //total number of elements
         int idx=0;
         
-        int tne=2*(re-rs)+2*(ce-cs);
-        int[] a1=new int[tne];
+        int[] a=new int[tne];
         
+         //left wall
         for(int i=rs,j=cs;i<=re;i++){
-            a1[idx]=arr[i][j];
+            a[idx]=arr[i][j];
             idx++;
         }
         cs++;
         
+        //bottom wall
         for(int i=re,j=cs;j<=ce;j++){
-            a1[idx]=arr[i][j];
+            a[idx]=arr[i][j];
             idx++;
         }
         re--;
         
+        //right wall
         for(int i=re,j=ce;i>=rs;i--){
-            a1[idx]=arr[i][j];
+            a[idx]=arr[i][j];
             idx++;
         }
         ce--;
         
+        //top wall
         for(int i=rs,j=ce;j>=cs;j--){
-            a1[idx]=arr[i][j];
+            a[idx]=arr[i][j];
             idx++;
         }
         rs++;
         
-        return a1;
-        
+        return a;
     }
     
-    public static void rotate(int[] a1,int r){
-        r=r%a1.length;
+    public static void rotateArray(int[] a,int r){
+        r=r%a.length;
+        
         if(r<0){
-            r=r+a1.length;
+            r=r+a.length;
         }
         
-        reverse(a1,0,a1.length-1-r);
+        reverse(a,0,a.length-r-1);              //first half reversal
         
-        reverse(a1,a1.length-r,a1.length-1);
+        reverse(a,a.length-r,a.length-1);       //second half reversal
         
-        reverse(a1,0,a1.length-1);
-        
+        reverse(a,0,a.length-1);                //whole array reverse
     }
     
-    public static void reverse(int[] a1,int i,int j){
+    public static void reverse(int[] a,int i,int j){
         while(i<j){
-            int temp=a1[i];
-            a1[i]=a1[j];
-            a1[j]=temp;
+            int temp=a[i];
+            a[i]=a[j];
+            a[j]=temp;
             i++;
             j--;
         }
     }
     
-    public static void fill2dArray(int[] a1,int s,int[][] arr){
+    public static void fill2dArray(int[][] arr,int[] a,int s){
         int rs=s-1;
-        int re=arr.length-s;
         int cs=s-1;
+        int re=arr.length-s;
         int ce=arr[0].length-s;
+        int tne=2*(re-rs)+2*(ce-cs);    //total number of elements
         int idx=0;
         
-        int tne=2*(re-rs)+2*(ce-cs);
         
+         //left wall
         for(int i=rs,j=cs;i<=re;i++){
-            arr[i][j]=a1[idx];
+            arr[i][j]=a[idx];
             idx++;
         }
         cs++;
         
+        //bottom wall
         for(int i=re,j=cs;j<=ce;j++){
-            arr[i][j]=a1[idx];
+            arr[i][j]=a[idx];
             idx++;
         }
         re--;
         
+        //right wall
         for(int i=re,j=ce;i>=rs;i--){
-            arr[i][j]=a1[idx];
+            arr[i][j]=a[idx];
             idx++;
         }
         ce--;
         
+        //top wall
         for(int i=rs,j=ce;j>=cs;j--){
-            arr[i][j]=a1[idx];
+            arr[i][j]=a[idx];
             idx++;
         }
         rs++;
