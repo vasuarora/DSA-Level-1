@@ -15,7 +15,7 @@ public class EndPointOfMatrix {
         int i=0;
         int j=0;
         while(true){
-            dir=(a[i][j]+dir)%4;
+            dir=(a[i][j]+dir)%4;                      
             
             if(dir==0){
                 j++;

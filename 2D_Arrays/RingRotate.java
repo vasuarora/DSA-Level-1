@@ -68,7 +68,7 @@ public class RingRotate {
     }
     
     public static void rotateArray(int[] a,int r){
-        r=r%a.length;
+        r=r%a.length;                                 
         
         if(r<0){
             r=r+a.length;

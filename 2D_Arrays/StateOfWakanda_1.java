@@ -12,12 +12,12 @@ public class StateOfWakanda_1 {
         }
         
         for(int j=0;j<m;j++){
-            if(j%2==0){
+            if(j%2==0){                                             //for even column traversals
                 for(int i=0;i<n;i++){
                     System.out.println(arr[i][j]);
                 }
             }
-            else{
+            else{                                                   //for odd column traversals
                 for(int i=arr.length-1;i>=0;i--){
                     System.out.println(arr[i][j]);
                 }
