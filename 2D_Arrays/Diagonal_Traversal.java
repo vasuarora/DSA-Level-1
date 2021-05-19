@@ -10,7 +10,7 @@ public class Diagonal_Traversal {
             }
         }
         
-        for(int g=0;g<a.length;g++){
+        for(int g=0;g<a.length;g++){                          //to get start point of diagonal
             for(int i=0,j=g;j<a[0].length;i++,j++){
                 System.out.println(a[i][j]);
             }

@@ -10,16 +10,16 @@ public class SaddlePrice {
             }
         }
         
-        for(int i=0;i<a.length;i++){
+        for(int i=0;i<a.length;i++){                          
             int svj=0;
-            for(int j=0;j<a[0].length;j++){
+            for(int j=0;j<a[0].length;j++){                    //loop to get smallest value in the row
                 if(a[i][j]<a[i][svj]){
                     svj=j;
                 }
             }
             
             boolean flag=true;
-            for(int k=0;k<a.length;k++){
+            for(int k=0;k<a.length;k++){                           //loop to check if the element is largest in its column
                 if(a[k][svj]>a[i][svj]){
                     flag=false;
                     break;

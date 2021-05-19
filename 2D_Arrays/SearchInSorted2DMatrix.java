@@ -12,7 +12,7 @@ public class SearchInSorted2DMatrix {
         
         int x=scn.nextInt();
         int i=0;
-        int j=a[0].length-1;
+        int j=a[0].length-1;                                //top right corner of matrix
         
         while(i<a.length && j>=0){
             if(a[i][j]==x){
@@ -21,11 +21,11 @@ public class SearchInSorted2DMatrix {
                 return;
             }
             
-            else if(x<a[i][j]){
+            else if(x<a[i][j]){                       //move towards left in matrix if value is small
                 j--;
             }
             
-            else if(x>a[i][j]){
+            else if(x>a[i][j]){                       //move downwards in matrix if value is large
                 i++;
             }
         }
