@@ -11,13 +11,13 @@ public class BarChart {
         
         int max=Integer.MIN_VALUE;
         
-        for(int i=0;i<n;i++){                   //finding max value in array
+        for(int i=0;i<n;i++){                   //to find max value in array
             if(arr[i]>max){
                 max=arr[i];
             }
         }
         
-        for(int i=max;i>0;i--){
+        for(int i=max;i>0;i--){                          //constructing the bar chart
             for(int j=0;j<arr.length;j++){
                 if(arr[j]>=i){
                     System.out.print("*	");

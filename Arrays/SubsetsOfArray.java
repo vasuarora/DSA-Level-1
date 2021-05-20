@@ -9,7 +9,7 @@ public class SubsetsOfArray {
             arr[i]=scn.nextInt();
         }
         
-        int lim=(int)Math.pow(2,n);
+        int lim=(int)Math.pow(2,n);                    //to find number of subsets
         for(int i=0;i<lim;i++){
             String st="";
             int temp=i;

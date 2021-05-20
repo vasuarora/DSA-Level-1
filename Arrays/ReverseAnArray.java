@@ -11,8 +11,8 @@ public class ReverseAnArray {
       }
     
       public static void reverse(int[] a){
-        int i=0;
-        int j=a.length-1;
+        int i=0;                               //first index
+        int j=a.length-1;                     //last index
         while(i<=j){
             int temp=a[i];
             a[i]=a[j];

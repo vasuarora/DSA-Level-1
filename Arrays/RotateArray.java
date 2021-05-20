@@ -2,16 +2,16 @@ import java.util.*;
 import java.io.*;
 public class RotateArray {
     public static void rotate(int[] a, int k) {
-        k=k%a.length;
+        k=k%a.length;                
         
         if(k<0){
             k=k+a.length;
         }
-        reverse(a,0,a.length-1-k);
+        reverse(a,0,a.length-1-k);               //reversing first half of array upto (a.length-k-1)th index
         
-        reverse(a,a.length-k,a.length-1);
+        reverse(a,a.length-k,a.length-1);        //reversing second half of array that is from kth index to last index
         
-        reverse(a,0,a.length-1);
+        reverse(a,0,a.length-1);                 //reversing the whole array
 
    }
    

@@ -1,8 +1,8 @@
 import java.util.*;
 public class MaximumSubArray {
     public static int maxSum(int[] arr) {
-        int cs=arr[0];
-        int ms=arr[0];
+        int cs=arr[0];                                //current sum
+        int ms=arr[0];                               //maximum sum
         for(int i=0;i<arr.length;i++){
             if(cs<0){
                 cs=arr[i];

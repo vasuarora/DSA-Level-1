@@ -14,10 +14,10 @@ public class FindElement {
      
      public static int find(int[] arr,int d){
          for(int i=0;i<arr.length;i++){
-             if(arr[i]==d){
-                 return i;
+             if(arr[i]==d){                                 //to check the presence of element
+                 return i;                                //element found
              }
          }
-         return -1;
+         return -1;                                       //if element not found
      }
 }

@@ -8,9 +8,9 @@ public class SubArray {
             arr[i]=scn.nextInt();
         }
         
-        for(int i=0;i<n;i++){
-            for(int j=i;j<n;j++){
-                for(int k=i;k<=j;k++){
+        for(int i=0;i<n;i++){                                    //to get starting element of subarray
+            for(int j=i;j<n;j++){                               //to get last element of subarray
+                for(int k=i;k<=j;k++){                          //to print from first to last element of subarray       
                     System.out.print(arr[k]+"	");
                 }
                 System.out.println();

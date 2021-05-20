@@ -11,11 +11,11 @@ public class InverseOfArray {
       }
     
       public static int[] inverse(int[] a){
-          int[] inv=new int[a.length];
+          int[] inv=new int[a.length];                        
           for(int i=0;i<a.length;i++){
-              int t=a[i];
-              inv[t]=i;
-          }
+              int t=a[i];                                //put the array value in element t
+              inv[t]=i;                                  //using the element of array a as index of inv array            
+          }                                             //and index of array a as element of array inv
           return inv;
         
       }

@@ -21,7 +21,7 @@ public class SumOf2Arrays {
             max=a2.length;
         }
         
-        int[] a3=new int[max];
+        int[] a3=new int[max];                       //sum array
         
         int i=a1.length-1;
         int j=a2.length-1;
@@ -31,22 +31,22 @@ public class SumOf2Arrays {
         while(k>=0){
             int s=c;
             if(i>=0){
-                s+=a1[i];
+                s+=a1[i];                          //adding elements of first array
             }
             if(j>=0){
-                s+=a2[j];
+                s+=a2[j];                          //adding elements of second array
             }
             int sum=s%10;
-            c=s/10;
-            a3[k]=sum;
+            c=s/10;                               //carry generation
+            a3[k]=sum;                            //adding sum element to sum array
             i--;
             j--;
             k--;
         }
-        if(c!=0){
-            System.out.println(c);
+        if(c!=0){                                   //Print the carry if any is left at the end
+            System.out.println(c);                            
         }
-        for(int l=0;l<a3.length;l++){
+        for(int l=0;l<a3.length;l++){                   //Display sum array
             System.out.println(a3[l]);
         }
      }

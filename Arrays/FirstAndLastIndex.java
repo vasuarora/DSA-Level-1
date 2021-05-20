@@ -14,7 +14,7 @@ public class FirstAndLastIndex {
          int fi=-1;
          int li=-1;
          while(lo<=hi){
-             int mid=(lo+hi)/2;
+             int mid=(lo+hi)/2;                         //middle element of array
              if(arr[mid]==d){
                  fi=mid;
                  hi=mid-1;
@@ -42,7 +42,7 @@ public class FirstAndLastIndex {
                  l=mid+1;
              }
          }
-         System.out.println(fi);
-         System.out.println(li);
+         System.out.println(fi);                   //first index
+         System.out.println(li);                   //last index
      }
 }
