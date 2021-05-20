@@ -1,5 +1,5 @@
 import java.util.*;
-public class DifferenceOf2Arrays {
+public class 01.DifferenceOf2Arrays {
     public static void main(String[] args) throws Exception {
         Scanner scn=new Scanner(System.in);
         int n1=scn.nextInt();
@@ -16,7 +16,7 @@ public class DifferenceOf2Arrays {
             a2[i]=scn.nextInt();
         }
         
-        int[] a3=new int[n2];
+        int[] a3=new int[n2];                  //length of difference array
         
         int i=a1.length-1;
         int j=a2.length-1;
