@@ -33,7 +33,7 @@ public class EndPointOfMatrix {
                 i--;
             }
             
-            //Conditions to terminate i and j are out of matrix
+            //Conditions to terminate if i and j are out of matrix
             if(i<0){     
                 i++;
                 break;

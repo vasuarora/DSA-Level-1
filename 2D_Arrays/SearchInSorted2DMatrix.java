@@ -21,11 +21,11 @@ public class SearchInSorted2DMatrix {
                 return;
             }
             
-            else if(x<a[i][j]){                       //move towards left in matrix if value is small
+            else if(x<a[i][j]){                       //move towards left in the matrix if x is smaller than matrix element
                 j--;
             }
             
-            else if(x>a[i][j]){                       //move downwards in matrix if value is large
+            else if(x>a[i][j]){                       //move downwards in the matrix if x is larger than matrix element
                 i++;
             }
         }
