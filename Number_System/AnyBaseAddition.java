@@ -16,8 +16,8 @@ public class AnyBaseAddition {
          int pow=1;
          
          while(n1!=0 || n2!=0 || c!=0){
-             int d1=n1%10;                      //extracting the last digit of n1 to be added
-             int d2=n2%10;                      //extracting the last digit of n2 to be added
+             int d1=n1%10;                      //extracting the last digit of n1
+             int d2=n2%10;                      //extracting the last digit of n2
              n1=n1/10;                         
              n2=n2/10;                          
              

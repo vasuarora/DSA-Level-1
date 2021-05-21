@@ -17,7 +17,7 @@ public class AnyBaseMultiplication {
              int d2=n2%10;                           //last digit of n2
              n2=n2/10;
              int t=prodSingleDigit(b,n1,d2);              //Function to multiply last digit of n2 with all the digits of n1
-             s=add(b,s,t*p);                              //Adding all the single digit mutiplications to form the answer
+             s=add(b,s,t*p);                              //Adding all the mutiplications with single digits
              p=p*10;
          }
          return s;

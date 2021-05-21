@@ -12,8 +12,8 @@ public class DigitFrequency {
         int count=0;
         while(n!=0){
             int rem=n%10;
-            if(rem==d){
-                count++;
+            if(rem==d){                        
+                count++;                   //incrementing count on digit being found
             }
             n=n/10;
         }
