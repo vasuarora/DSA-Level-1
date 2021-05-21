@@ -6,12 +6,12 @@ public class AnyBaseToAnyBase {
         int sourceBase = scn.nextInt();
         int  destBase= scn.nextInt();
         
-        int a1=baseToDec(n,sourceBase);
-        int a2=DectoBase(a1,destBase);
+        int a1=baseToDec(n,sourceBase);                //converting the source base to decimal
+        int a2=DectoBase(a1,destBase);                 //converting the decimal to destination base
         System.out.println(a2);
      }   
      
-     public static int baseToDec(int n,int b){
+     public static int baseToDec(int n,int b){                   
          int ans=0;
          int pow=1;
          while(n!=0){

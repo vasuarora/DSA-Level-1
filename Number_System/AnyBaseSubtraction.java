@@ -16,10 +16,10 @@ public class AnyBaseSubtraction {
          int d=0;
          
          while(n2!=0){
-             int d1=n1%10;
-             int d2=n2%10;
+             int d1=n1%10;                  //extracting last digit of n1
+             int d2=n2%10;                  //extracting last digit of n2
              
-             n1=n1/10;
+             n1=n1/10;                      
              n2=n2/10;
              
              d2=d2+d;
@@ -30,7 +30,7 @@ public class AnyBaseSubtraction {
                  d=0;
              }
              else{
-                 diff=d2+b-d1;
+                 diff=d2+b-d1;                 //taking a borrow as d1>d2
                  d=-1;
              }
              

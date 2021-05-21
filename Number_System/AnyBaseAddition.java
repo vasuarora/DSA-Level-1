@@ -16,13 +16,13 @@ public class AnyBaseAddition {
          int pow=1;
          
          while(n1!=0 || n2!=0 || c!=0){
-             int d1=n1%10;
-             int d2=n2%10;
-             n1=n1/10;
-             n2=n2/10;
+             int d1=n1%10;                      //extracting the last digit of n1 to be added
+             int d2=n2%10;                      //extracting the last digit of n2 to be added
+             n1=n1/10;                         
+             n2=n2/10;                          
              
              int s=d1+d2+c;
-             int sum=s%b;
+             int sum=s%b;                       
              c=s/b;
              
              ans=ans+sum*pow;

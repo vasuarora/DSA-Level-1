@@ -14,16 +14,16 @@ public class AnyBaseMultiplication {
          int p=1;
          int s=0;
          while(n2!=0){
-             int d2=n2%10;
+             int d2=n2%10;                           //last digit of n2
              n2=n2/10;
-             int t=prodSingleDigit(b,n1,d2);
-             s=add(b,s,t*p);
+             int t=prodSingleDigit(b,n1,d2);              //Function to multiply last digit of n2 with all the digits of n1
+             s=add(b,s,t*p);                              //Adding all the single digit mutiplications to form the answer
              p=p*10;
          }
          return s;
      }
      
-     public static int prodSingleDigit(int b,int n1,int d2){
+     public static int prodSingleDigit(int b,int n1,int d2){             
          int ans=0;
          int pow=1;
          int c=0;
