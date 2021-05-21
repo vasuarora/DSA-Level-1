@@ -7,14 +7,14 @@ public class RotateANumber {
         int count=0;
         int temp=n;
         
-        while(temp!=0){     //Counting number of Digits
+        while(temp!=0){                  //Counting number of Digits
             count++;
             temp=temp/10;
         }
         
-        k=k%count;           //if k is greater than number of digits
+        k=k%count;                      //if k is greater than number of digits
         
-        if(k<0){            //to perform left shift instead of right
+        if(k<0){                       //to perform left shift instead of right
             k=k+count;
         }
         

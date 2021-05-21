@@ -33,7 +33,7 @@ public class RotateBy90 {
         display(arr);
     }
 
-    public static void display(int[][] arr){                         //Display Array
+    public static void display(int[][] arr){                         //Displaying Array
         for(int i = 0; i < arr.length; i++){
             for(int j = 0; j < arr[0].length; j++){
                 System.out.print(arr[i][j] + " ");
