@@ -7,10 +7,10 @@ public class PrintIncreasing {
     }
 
     public static void printIncreasing(int n){
-        if(n==0){
+        if(n==0){                         //base case
             return;
         }
-        printIncreasing(n-1);
+        printIncreasing(n-1);              //recursive call
         System.out.println(n);
     }
 }
