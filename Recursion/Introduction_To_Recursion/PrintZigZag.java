@@ -7,14 +7,14 @@ public class PrintZigZag {
     }
 
     public static void pzz(int n){
-        if(n==0){
+        if(n==0){                   //base case
             return;
         }
         
-        System.out.print(n+" ");
+        System.out.print(n+" ");              //preorder printing
         pzz(n-1);
-        System.out.print(n+" ");
+        System.out.print(n+" ");              //inorder printing
         pzz(n-1);
-        System.out.print(n+" ");
+        System.out.print(n+" ");              //postorder printing
     }
 }
