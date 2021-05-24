@@ -12,8 +12,8 @@ public class PowerLog {
         if(n==0){                           //base case
             return 1;
         }
-        int xnb2=power(x,n/2);              //power of x to the power n/2(recursive call)
-        int xn=xnb2*xnb2;                  //power of x to the power n;
+        int xnb2=power(x,n/2);              //x to the power n/2(recursive call)
+        int xn=xnb2*xnb2;                  //x to the power n;
         if(n%2!=0){                        //To handle cases with odd power
             xn=x*xn;
         }

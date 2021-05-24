@@ -13,8 +13,8 @@ public class PowerLinear {
             return 1;
         }
         
-        int xnm1=power(x,n-1);            //power of x to the power n-1(recursive call)
-        int xn=x*xnm1;                    //power of x to the power n
+        int xnm1=power(x,n-1);            //x to the power n-1(recursive call)
+        int xn=x*xnm1;                    //x to the power n
         return xn;
         
     }
