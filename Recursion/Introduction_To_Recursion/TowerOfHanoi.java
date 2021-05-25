@@ -16,6 +16,6 @@ public class TowerOfHanoi {
         }
         toh(n-1,t1id,t3id,t2id);                               //transfer n-1 disks from tower 1 to tower 3 using tower 2 as helper
         System.out.println(n+"["+t1id+" -> "+t2id+"]");        //tranfer nth disk from tower 1 to tower 2
-        toh(n-1,t3id,t2id,t1id);                               //transfer n-1 disks from tower 3 to tower 2 using tower 1 as helper
+        toh(n-1,t3id,t2id,t1id);                               //transfer cd n-1 disks from tower 3 to tower 2 using tower 1 as helper
     }
 }
