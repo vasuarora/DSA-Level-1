@@ -28,7 +28,7 @@ public class AllIndices {
         }
         if(arr[idx]==x){                                       
             int[] a=allIndices(arr,x,idx+1,fsf+1);                      
-            a[fsf]=idx;                                     //adds the index of element to array a
+            a[fsf]=idx;                                     //adds all the indexes of element x to array a
             return a;
         }
         else{
