@@ -16,7 +16,7 @@ public class GetKPC {
             return ab;
         }
         
-        char ch=str.charAt(0);                               //Extracting first character of string
+        char ch=str.charAt(0);                               //Extracting the first character of string
         String ros=str.substring(1);                         //Extracting the remaining string
         ArrayList<String> rans=getKPC(ros);
         ArrayList<String> ans=new ArrayList<>();             //Creating an answer arraylist

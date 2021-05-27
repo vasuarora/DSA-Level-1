@@ -14,9 +14,9 @@ public class GetSubsequence {
             return ab;
         }
         
-        char ch=str.charAt(0);                               //Extractiong first character
+        char ch=str.charAt(0);                               //Extractiong the first character of string
         String ros=str.substring(1);                         //Extracting rest of the string
-        ArrayList<String> rans=gss(ros);                     //Recursive call
+        ArrayList<String> rans=gss(ros);                     
         ArrayList<String> ans=new ArrayList<>();             //Creating an answer arraylist
         
         for(int i=0;i<rans.size();i++){
