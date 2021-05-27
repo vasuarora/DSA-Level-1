@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
         "TimeAndSpaceComplexity",
+        "Recursion/Recursion_With_Arrays",
         "Recursion/Introduction_To_Recursion",
         "Patterns",
         "Number_System",
@@ -8,6 +9,6 @@
         "Arrays",
         "ArrayList_And_Strings",
         "2D_Arrays",
-        "Recursion/Recursion_With_Arrays"
+        "Recursion/Recursion_With_ArrayLists"
     ]
 }
