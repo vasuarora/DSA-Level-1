@@ -26,7 +26,7 @@ public class GetMazePaths {
         
         ArrayList<String> hpaths=getMazePaths(sr,sc+1,dr,dc);           //recursive call for horizontal paths
         ArrayList<String> vpaths=getMazePaths(sr+1,sc,dr,dc);           //recursive call for vertical paths
-        ArrayList<String> ans=new ArrayList<>();
+        ArrayList<String> ans=new ArrayList<>();                        //Creating an answer arraylist
         
         for(int i=0;i<hpaths.size();i++){
             ans.add("h"+hpaths.get(i));
