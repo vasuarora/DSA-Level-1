@@ -13,14 +13,14 @@ public class PrintMazePaths {
     // dc - destination column
     public static void printMazePaths(int sr, int sc, int dr, int dc, String psf) {
         if(sr==dr && sc==dc){
-            System.out.println(psf);
+            System.out.println(psf);                         //printing maze paths
             return;
         }
         if(sr>dr || sc>dc){
             return;
         }
         
-        printMazePaths(sr,sc+1,dr,dc,psf+"h");
-        printMazePaths(sr+1,sc,dr,dc,psf+"v");
+        printMazePaths(sr,sc+1,dr,dc,psf+"h");                     //horizontal paths
+        printMazePaths(sr+1,sc,dr,dc,psf+"v");                     //vertical paths
     }
 }

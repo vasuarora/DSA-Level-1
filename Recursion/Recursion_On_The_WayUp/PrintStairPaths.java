@@ -8,7 +8,7 @@ public class PrintStairPaths {
 
     public static void printStairPaths(int n, String path) {
         if(n==0){
-            System.out.println(path);
+            System.out.println(path);                         //printing stair paths
             return;
         }
         
@@ -16,8 +16,8 @@ public class PrintStairPaths {
             return;
         }
         
-        printStairPaths(n-1,path+"1");
-        printStairPaths(n-2,path+"2");
-        printStairPaths(n-3,path+"3");
+        printStairPaths(n-1,path+"1");                       //recursive call for n-1 steps
+        printStairPaths(n-2,path+"2");                       //recursive call for n-2 steps
+        printStairPaths(n-3,path+"3");                       //recursive call for n-3 steps
     }
 }
