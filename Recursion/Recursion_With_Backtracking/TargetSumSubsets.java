@@ -13,8 +13,8 @@ public class TargetSumSubsets {
     }
 
     // set is the subset
-    // sos is sum of subset
-    // tar is target
+    // sos is the sum of subset
+    // tar is the target
     public static void printTargetSumSubsets(int[] arr, int idx, String set, int sos, int tar) {
         if(idx==arr.length){
             if(sos==tar){
@@ -27,7 +27,7 @@ public class TargetSumSubsets {
             return;
         }
         
-        printTargetSumSubsets(arr,idx+1,set+arr[idx]+", ",sos+arr[idx],tar);          //an element is included
-        printTargetSumSubsets(arr,idx+1,set,sos,tar);                                 //an element is not included
+        printTargetSumSubsets(arr,idx+1,set+arr[idx]+", ",sos+arr[idx],tar);              //an element is included
+        printTargetSumSubsets(arr,idx+1,set,sos,tar);                                    //an element is not included
     }
 }

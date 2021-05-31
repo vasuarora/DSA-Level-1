@@ -33,6 +33,6 @@ public class FloodFill {
         floodfill(maze,sr+1,sc,asf+"d",vis);                //down
         floodfill(maze,sr,sc+1,asf+"r",vis);                //right
         
-        vis[sr][sc]=false;                                 //marking the cell unvisited while backtracking
+        vis[sr][sc]=false;                                 //marking the cell as unvisited while backtracking
     }
 }
