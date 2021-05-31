@@ -3,6 +3,7 @@
         "TimeAndSpaceComplexity",
         "Recursion/Recursion_With_Arrays",
         "Recursion/Recursion_With_ArrayLists",
+        "Recursion/Recursion_On_The_WayUp",
         "Recursion/Introduction_To_Recursion",
         "Patterns",
         "Number_System",
@@ -10,6 +11,6 @@
         "Arrays",
         "ArrayList_And_Strings",
         "2D_Arrays",
-        "Recursion/Recursion_On_The_WayUp"
+        "Recursion/Recursion_With_Backtracking"
     ]
 }
