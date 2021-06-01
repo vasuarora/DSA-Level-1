@@ -23,21 +23,21 @@ public class NQueens {
     }
     
     public static boolean isQueenSafe(int[][] chess,int r,int c){
-        //vertical
+        //vertical check
         for(int i=r-1;i>=0;i--){
             if(chess[i][c]==1){
                 return false;
             }
         }
         
-        //top left diagonal
+        //top left diagonal check
         for(int i=r-1,j=c-1;i>=0 && j>=0;i--,j--){
             if(chess[i][j]==1){
                 return false;
             }
         }
         
-        //top right diagonal
+        //top right diagonal check
         for(int i=r-1,j=c+1;i>=0 && j<chess.length;i--,j++){
             if(chess[i][j]==1){
                 return false;

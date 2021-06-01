@@ -4,8 +4,8 @@ public class KnightsTour {
         Scanner scn=new Scanner(System.in);
         int n=scn.nextInt();
         int[][] chess=new int[n][n];
-        int row=scn.nextInt();
-        int col=scn.nextInt();
+        int row=scn.nextInt();                        
+        int col=scn.nextInt();                             //initial position of knight
         printKnightsTour(chess,row,col,1);
     }
 
@@ -17,7 +17,7 @@ public class KnightsTour {
         
         if(move==chess.length*chess.length){
             chess[r][c]=move;                            //last move
-            displayBoard(chess);                         //printing the answer
+            displayBoard(chess);                         //printing the moves
             chess[r][c]=0;
             return;
         }
