@@ -15,9 +15,9 @@ public class NQueens {
         
         for(int col=0;col<chess.length;col++){
             if(isQueenSafe(chess,row,col)==true){                        //to check if queen is safe to place
-                chess[row][col]=1;                                       //mark the queen as placed
+                chess[row][col]=1;                                       //marking the queen as placed
                 printNQueens(chess,qsf+row+"-"+col+", ",row+1);
-                chess[row][col]=0;                                        //mark the queen as unplaced while backtracking
+                chess[row][col]=0;                                        //marking the queen as unplaced while backtracking
             }
         }
     }
