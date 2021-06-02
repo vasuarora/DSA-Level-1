@@ -4,12 +4,15 @@ public class Sort01 {
         int i=0;
         int j=0;
         
+        //0 to i-1 => 0's
+        //i to j-1 => 1's
+        //j to end => unknowns
         while(j<arr.length){
             if(arr[j]==1){
-                j++;
+                j++;                           //increasing 1's region
             }
             else{
-                swap(arr,j,i);
+                swap(arr,j,i);                //swapping 0 and 1 and increasing 0's and 1's region respectively
                 i++;
                 j++;
             }
@@ -25,7 +28,7 @@ public class Sort01 {
         arr[j] = temp;
       }
     
-      public static void print(int[] arr){
+      public static void print(int[] arr){                       //printing the sorted array
         for(int i = 0 ; i < arr.length; i++){
           System.out.println(arr[i]);
         }

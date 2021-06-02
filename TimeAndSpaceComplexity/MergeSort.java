@@ -8,9 +8,9 @@ public class MergeSort {
         }
         
         int mid=(lo+hi)/2;
-        int[] lh=mergeSort(arr,lo,mid);
-        int[] rh=mergeSort(arr,mid+1,hi);
-        int[] m=mergeTwoSortedArrays(lh,rh);
+        int[] lh=mergeSort(arr,lo,mid);                     //recursive call to left half of the array
+        int[] rh=mergeSort(arr,mid+1,hi);                   //recursive call to right half of the array
+        int[] m=mergeTwoSortedArrays(lh,rh);                //merging the two sorted arrays
         
         return m;
     }
@@ -51,7 +51,7 @@ public class MergeSort {
       return ans;
     }
   
-    public static void print(int[] arr) {
+    public static void print(int[] arr) {                     //printing the sorted array
       for (int i = 0; i < arr.length; i++) {
         System.out.print(arr[i] + " ");
       }

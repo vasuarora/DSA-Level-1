@@ -15,7 +15,7 @@ public class InsertionSort {
       }
     
       // used for swapping ith and jth elements of array
-      public static void swap(int[] arr, int i, int j) {
+      public static void swap(int[] arr, int i, int j) {                  
         System.out.println("Swapping " + arr[i] + " and " + arr[j]);
         int temp = arr[i];
         arr[i] = arr[j];
@@ -32,7 +32,7 @@ public class InsertionSort {
         }
       }
     
-      public static void print(int[] arr) {
+      public static void print(int[] arr) {                     //printing the sorted array
         for (int i = 0; i < arr.length; i++) {
           System.out.println(arr[i]);
         }

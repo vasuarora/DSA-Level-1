@@ -6,7 +6,7 @@ public class SelectionSort {
             int min=i;
             for(int j=i+1;j<n;j++){
                 if(isSmaller(arr,j,min)==true){
-                    min=j;
+                    min=j;                           //to get the minimum element in array
                 }
             }
             swap(arr,i,min);
@@ -33,7 +33,7 @@ public class SelectionSort {
       }
     
       public static void print(int[] arr) {
-        for (int i = 0; i < arr.length; i++) {
+        for (int i = 0; i < arr.length; i++) {                 //printing the sorted array
           System.out.println(arr[i]);
         }
       }

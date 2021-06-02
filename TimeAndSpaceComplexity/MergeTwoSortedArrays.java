@@ -1,14 +1,14 @@
 import java.util.*;
 public class MergeTwoSortedArrays {
     public static int[] mergeTwoSortedArrays(int[] a, int[] b){
-        int[] c=new int[a.length+b.length];                     
-        int i=0;
+        int[] c=new int[a.length+b.length];                     //resultant array                 
+        int i=0;                           
         int j=0;
         int k=0;
         
         while(i<a.length && j<b.length){
-            if(a[i]<b[j]){
-                c[k]=a[i];
+            if(a[i]<b[j]){                   
+                c[k]=a[i];                   
                 i++;
                 k++;
             }
@@ -19,13 +19,13 @@ public class MergeTwoSortedArrays {
             }
         }
         
-        while(i<a.length){                   
+        while(i<a.length){                   //incase elements of array a are still left over
             c[k]=a[i];
             i++;
             k++;
         }
         
-        while(j<b.length){
+        while(j<b.length){                  //incase elements of array b are still left over
             c[k]=b[j];
             j++;
             k++;
@@ -34,8 +34,8 @@ public class MergeTwoSortedArrays {
         return c;
       }
     
-      public static void print(int[] arr){
-        for(int i = 0 ; i < arr.length; i++){
+      public static void print(int[] arr){                     //printing the sorted array
+        for(int i = 0 ; i < arr.length; i++){             
           System.out.println(arr[i]);
         }
       }

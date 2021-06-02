@@ -4,8 +4,8 @@ public class BubbleSort {
         int n=arr.length;
         for(int i=1;i<n;i++){
             for(int j=0;j<n-i;j++){
-                if(isSmaller(arr,j+1,j)==true){
-                    swap(arr,j+1,j);
+                if(isSmaller(arr,j+1,j)==true){             //comparision with the next element
+                    swap(arr,j+1,j);                    
                 }
             }
         }
@@ -30,7 +30,7 @@ public class BubbleSort {
         }
       }
     
-      public static void print(int[] arr) {
+      public static void print(int[] arr) {                      //printing the sorted arraay
         for (int i = 0; i < arr.length; i++) {
           System.out.println(arr[i]);
         }
