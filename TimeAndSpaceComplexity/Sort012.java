@@ -20,7 +20,7 @@ public class Sort012 {
                 j++;                               //swapping 0 and 1 and increasing 0's and 1's region respectively
             }
             else{
-                swap(arr,j,k);                       
+                swap(arr,j,k);                     //swapping 2 and the unknown element
                 k--;                               //increasing 2's region
             }
         }

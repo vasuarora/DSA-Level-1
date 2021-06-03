@@ -4,11 +4,11 @@ public class PartitionAnArray {
         int i=0;
         int j=0;
         while(j<arr.length){
-            if(arr[j]>pivot){                      //for elements greater than pivot element
+            if(arr[j]>pivot){                      //for elements greater than the pivot element
                 j++;
             }
             else{
-                swap(arr,j,i);                     //for elements less than pivot element
+                swap(arr,j,i);                     //for elements less than the pivot element
                 i++;
                 j++;
             }
