@@ -34,7 +34,7 @@ public class QuickSort {
         arr[j] = temp;
       }
     
-      public static void print(int[] arr) {                //printing the array
+      public static void print(int[] arr) {                //printing the sorted array
         for (int i = 0; i < arr.length; i++) {
           System.out.print(arr[i] + " ");
         }
