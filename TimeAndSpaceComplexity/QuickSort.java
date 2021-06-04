@@ -5,8 +5,8 @@ public class QuickSort {
             return;
         }
         int pi=partition(arr,arr[hi],lo,hi);
-        quickSort(arr,lo,pi-1);                       //sorting elements to the left of pivot element
-        quickSort(arr,pi+1,hi);                       //sorting elements to the right of pivot element
+        quickSort(arr,lo,pi-1);                       //sorting elements in the left region of the pivot element
+        quickSort(arr,pi+1,hi);                       //sorting elements in the right region of the pivot element
         
       }
     

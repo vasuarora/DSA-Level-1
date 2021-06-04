@@ -5,7 +5,7 @@ public class CountSort {
         int[] a=new int[range];
         
         for(int i=0;i<arr.length;i++){
-            a[arr[i]-min]++;                          //crating an array of count of elements
+            a[arr[i]-min]++;                          //creating an array of count of elements
         }
         
         int[] psa=new int[a.length];
@@ -27,7 +27,7 @@ public class CountSort {
      
     }
   
-    public static void print(int[] arr) {                            //printing the array
+    public static void print(int[] arr) {                            //printing the sorted array
       for (int i = 0; i < arr.length; i++) {
         System.out.println(arr[i]);
       }

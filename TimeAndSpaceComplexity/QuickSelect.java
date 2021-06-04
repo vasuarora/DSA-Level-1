@@ -3,10 +3,10 @@ public class QuickSelect {
     public static int quickSelect(int[] arr, int lo, int hi, int k) {
         int pi=partition(arr,arr[hi],lo,hi);
         if(k<pi){
-            return quickSelect(arr,lo,pi-1,k);              //finding the index to the left of pivot element
+            return quickSelect(arr,lo,pi-1,k);              //finding the index in the left region of the pivot element
         }
         else if(k>pi){
-            return quickSelect(arr,pi+1,hi,k);              //finding the index to the right of pivot element
+            return quickSelect(arr,pi+1,hi,k);              //finding the index in the right region of the pivot element
         }
         else{
             return arr[pi];                           //pivot element is always sorted in the array

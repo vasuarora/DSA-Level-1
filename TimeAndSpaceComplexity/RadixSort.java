@@ -20,7 +20,7 @@ public class RadixSort {
       public static void countSort(int[] arr, int exp) {
           int[] freq=new int[10];
           
-          //fill freq array
+          //filling the frequency array
           for(int i=0;i<arr.length;i++){
               freq[(arr[i]/exp)%10]++;
           }
