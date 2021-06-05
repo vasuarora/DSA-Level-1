@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
         "TimeAndSpaceComplexity",
+        "Recursion/Recursion_With_Backtracking",
         "Recursion/Recursion_With_Arrays",
         "Recursion/Recursion_With_ArrayLists",
         "Recursion/Recursion_On_The_WayUp",
@@ -11,6 +12,6 @@
         "Arrays",
         "ArrayList_And_Strings",
         "2D_Arrays",
-        "Recursion/Recursion_With_Backtracking"
+        "DynamicProgrammingAndGreedy"
     ]
 }
