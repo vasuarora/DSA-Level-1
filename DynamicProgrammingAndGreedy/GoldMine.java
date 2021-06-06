@@ -43,6 +43,5 @@ public class GoldMine {
         }
         
         return max;
-        
     }
 }
