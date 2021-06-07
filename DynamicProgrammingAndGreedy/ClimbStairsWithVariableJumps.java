@@ -6,18 +6,18 @@ public class ClimbStairsWithVariableJumps {
         int[] arr=new int[n];
         
         for(int i=0;i<n;i++){
-            arr[i]=scn.nextInt();
+            arr[i]=scn.nextInt();              //jumps array
         }
         
-        int[] dp=new int[n+1];
-        dp[n]=1;
+        int[] dp=new int[n+1];                //creating the dp array
+        dp[n]=1;            
         
         for(int i=n-1;i>=0;i--){
             for(int j=1;j<=arr[i] && i+j<dp.length;j++){
-                dp[i]+=dp[i+j];
+                dp[i]+=dp[i+j];                            //number of ways to climb from ith stair to nth stair
             }
         }
         
-        System.out.println(dp[0]);
+        System.out.println(dp[0]);           //number of ways to climb from 0 to nth stair
     }
 }
