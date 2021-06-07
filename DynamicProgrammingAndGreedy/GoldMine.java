@@ -30,7 +30,7 @@ public class GoldMine {
                     dp[i][j]=arr[i][j]+Math.max(dp[i][j+1],dp[i-1][j+1]);
                 }
                 else{
-                    dp[i][j]=arr[i][j]+Math.max(dp[i][j+1],Math.max(dp[i+1][j+1],dp[i-1][j+1]));            //maximum gold that can be dug from i,j cell
+                    dp[i][j]=arr[i][j]+Math.max(dp[i][j+1],Math.max(dp[i+1][j+1],dp[i-1][j+1]));            
                 }
             }
         }
@@ -38,7 +38,7 @@ public class GoldMine {
         int max=Integer.MIN_VALUE;
         for(int i=0;i<dp.length;i++){
             if(dp[i][0]>max){
-                max=dp[i][0];                       
+                max=dp[i][0];               //returning the maximum gold that can be dug      
             }
         }
         
