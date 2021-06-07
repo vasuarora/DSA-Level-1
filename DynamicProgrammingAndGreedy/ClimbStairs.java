@@ -3,7 +3,7 @@ public class ClimbStairs {
     public static void main(String[] args) throws Exception {
         Scanner scn=new Scanner(System.in);
         int n=scn.nextInt();
-        int[] dp=new int[n+1];                
+        int[] dp=new int[n+1];                           //creating the dp array
         dp[0]=1;
         
         for(int i=1;i<dp.length;i++){
@@ -20,6 +20,6 @@ public class ClimbStairs {
             }
         }
         
-        System.out.println(dp[n]);                          //printing the count of paths to climb n stairs
+        System.out.println(dp[n]);                          //printing the number of ways to climb n stairs
     }
 }
