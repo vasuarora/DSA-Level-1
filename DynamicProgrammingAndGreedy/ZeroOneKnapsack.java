@@ -41,6 +41,6 @@ public class ZeroOneKnapsack {
                 }
             }
         }
-        System.out.println(dp[n][cap]);                             //maximum value in the bag
+        System.out.println(dp[n][cap]);                             //printing the maximum value in the bag
     }
 }
