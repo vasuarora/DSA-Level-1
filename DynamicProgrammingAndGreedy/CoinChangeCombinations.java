@@ -15,7 +15,7 @@ public class CoinChangeCombinations {
     }
     
     public static int coin_change(int[] arr,int amt){
-        int[] dp=new int[amt+1];
+        int[] dp=new int[amt+1];                          //creating the dp array
         dp[0]=1;
         for(int i=0;i<arr.length;i++){
             for(int j=0;j<dp.length;j++){

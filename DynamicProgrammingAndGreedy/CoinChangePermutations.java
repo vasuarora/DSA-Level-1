@@ -16,7 +16,7 @@ public class CoinChangePermutations {
     }
     
     public static int permutation(int[] arr,int n,int amt){
-        int[] dp=new int[amt+1];
+        int[] dp=new int[amt+1];                              //creating the dp array
         dp[0]=1;
         
         for(int i=0;i<dp.length;i++){

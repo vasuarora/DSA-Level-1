@@ -15,12 +15,12 @@ public class TargetSumSubsets_DP {
     }
     
     public static boolean subsets(int[] arr,int n,int tar){
-        boolean[][] dp=new boolean[n+1][tar+1];
+        boolean[][] dp=new boolean[n+1][tar+1];                       //creating the dp array
         
         for(int i=0;i<dp.length;i++){
             for(int j=0;j<dp[0].length;j++){
                 if(i==0 && j==0){
-                    dp[i][j]=true;
+                    dp[i][j]=true;                          
                 }
                 else if(i==0){
                     dp[i][j]=false;
@@ -43,6 +43,6 @@ public class TargetSumSubsets_DP {
                 }
             }
         }
-        return dp[dp.length-1][tar];
+        return dp[dp.length-1][tar];          
     }
 }
