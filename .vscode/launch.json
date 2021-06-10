@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch CountABC_Subsequences",
+            "request": "launch",
+            "mainClass": "CountABC_Subsequences",
+            "projectName": "DSA_7abaf5b7"
+        },
+        {
+            "type": "java",
+            "name": "Launch Count_A",
+            "request": "launch",
+            "mainClass": "Count_A",
+            "projectName": "DSA_7abaf5b7"
+        },
+        {
+            "type": "java",
             "name": "Launch CountEncodings",
             "request": "launch",
             "mainClass": "CountEncodings",
