@@ -10,8 +10,8 @@ public class CountEncodings {
         dp[1]=1;
         
         for(int i=2;i<dp.length;i++){
-            char curr=str.charAt(i);
-            char prev=str.charAt(i-1);
+            char curr=str.charAt(i);                     //current character
+            char prev=str.charAt(i-1);                   //previous character
             
             if(curr=='0' && prev=='0'){
                 dp[i]=0;
