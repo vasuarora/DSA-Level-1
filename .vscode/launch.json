@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch PaintHouse",
+            "request": "launch",
+            "mainClass": "PaintHouse",
+            "projectName": "DSA_7abaf5b7"
+        },
+        {
+            "type": "java",
             "name": "Launch MaxSumNonAdjacentElements",
             "request": "launch",
             "mainClass": "MaxSumNonAdjacentElements",
