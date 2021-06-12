@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch TilingWith2X1Tiles",
+            "request": "launch",
+            "mainClass": "TilingWith2X1Tiles",
+            "projectName": "DSA_7abaf5b7"
+        },
+        {
+            "type": "java",
             "name": "Launch PaintFence",
             "request": "launch",
             "mainClass": "PaintFence",
