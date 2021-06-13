@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch BuyAndSellStocks_OneTransaction",
+            "request": "launch",
+            "mainClass": "BuyAndSellStocks_OneTransaction",
+            "projectName": "DSA_7abaf5b7"
+        },
+        {
+            "type": "java",
             "name": "Launch PartitionIntoSubsets",
             "request": "launch",
             "mainClass": "PartitionIntoSubsets",
