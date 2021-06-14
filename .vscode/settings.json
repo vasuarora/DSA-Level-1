@@ -9,9 +9,10 @@
         "Patterns",
         "Number_System",
         "Getting_Started",
+        "DynamicProgrammingAndGreedy",
         "Arrays",
         "ArrayList_And_Strings",
         "2D_Arrays",
-        "DynamicProgrammingAndGreedy"
+        "StacksAndQueues"
     ]
 }
