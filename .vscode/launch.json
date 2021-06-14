@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch BuyAndSellStocks_InfiniteTransactions",
+            "request": "launch",
+            "mainClass": "BuyAndSellStocks_InfiniteTransactions",
+            "projectName": "DSA_7abaf5b7"
+        },
+        {
+            "type": "java",
             "name": "Launch BuyAndSellStocks_OneTransaction",
             "request": "launch",
             "mainClass": "BuyAndSellStocks_OneTransaction",
