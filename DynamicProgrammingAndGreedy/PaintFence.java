@@ -5,9 +5,9 @@ public class PaintFence {
         int n=scn.nextInt();
         int k=scn.nextInt();
         
-        int os=k;
-        int od=k*(k-1);
-        int total=os+od;
+        int os=k;                       //last two fences with same colour
+        int od=k*(k-1);                 //last two fences with different colour 
+        int total=os+od;                //total number of ways to paint the fence
         
         for(int i=3;i<=n;i++){
             os=od;

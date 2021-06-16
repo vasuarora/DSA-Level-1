@@ -16,13 +16,13 @@ public class BuyAndSellStocks_OneTransaction {
         
         for(int i=0;i<arr.length;i++){
             if(arr[i]<min){
-                min=arr[i];
+                min=arr[i];                 //minimum price of stock
             }
             
-            cp=arr[i]-min;
+            cp=arr[i]-min;                  //current profit     
             
             if(cp>max){
-                max=cp;
+                max=cp;                     //maximum profit
             }
         }
         

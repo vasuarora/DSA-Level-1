@@ -12,14 +12,14 @@ public class PaintHouse {
             }
         }
         
-        int or=arr[0][0];
-        int ob=arr[0][1];
-        int og=arr[0][2];
+        int or=arr[0][0];                    //cost of 1st house painted in red
+        int ob=arr[0][1];                    //cost of 1st house painted in blue
+        int og=arr[0][2];                    //cost of 1st house painted in green
         
         for(int i=1;i<arr.length;i++){
-            int nr=arr[i][0]+Math.min(ob,og);
-            int nb=arr[i][1]+Math.min(or,og);
-            int ng=arr[i][2]+Math.min(ob,or);
+            int nr=arr[i][0]+Math.min(ob,og);                //minimum cost of painting such that ith house is painted with red        
+            int nb=arr[i][1]+Math.min(or,og);                //minimum cost of painting such that ith house is painted with blue
+            int ng=arr[i][2]+Math.min(ob,or);                //minimum cost of painting such that ith house is painted with green
             
             or=nr;
             og=ng;
@@ -27,7 +27,7 @@ public class PaintHouse {
             
         }
         
-        int min=Math.min(or,Math.min(ob,og));
+        int min=Math.min(or,Math.min(ob,og));                 //overall minimum cost
         System.out.println(min);
     }
 }
