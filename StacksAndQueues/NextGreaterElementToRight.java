@@ -22,27 +22,29 @@ public class NextGreaterElementToRight {
         int[] nge = solve(a);
         display(nge);
      }
-    
+     
+     // nge = > next greater element
+
      public static int[] solve(int[] arr){
-       int[] nge=new int[arr.length];
+       int[] nge=new int[arr.length];                   //creating an array of nge of each element
        Stack<Integer> st=new Stack<>();
-       nge[arr.length-1]=-1;
+       nge[arr.length-1]=-1;                            //nge of last element is -1
        st.push(arr[arr.length-1]);
        
        for(int i=arr.length-2;i>=0;i--){
            while(st.size()!=0 && st.peek()<arr[i]){
-               st.pop();
+               st.pop();                                  //popping out the elements unless the stack size is 0 or we find nge
            }
            
            if(st.size()==0){
-               nge[i]=-1;
+               nge[i]=-1;                               //if stack size becomes 0,it means nge does not exists for that element
            }
            
            else{
-               nge[i]=st.peek();
+               nge[i]=st.peek();                       //nge is at the top of the stack 
            }
            
-           st.push(arr[i]);
+           st.push(arr[i]);                           //pushing element in stack
        }
        
        return nge;
