@@ -7,23 +7,23 @@ public class DuplicateBrackets {
         
         for(int i=0;i<str.length();i++){
             char c=str.charAt(i);
-            if(c=='('){
+            if(c=='('){                               //pushing the bracket in stack
                 st.push(c);
             }
             else if(c==')'){
-                if(st.peek()=='('){
-                    System.out.println("true");
+                if(st.peek()=='('){                          //this means there is no content between the bracket pair
+                    System.out.println("true");             //hence it is a duplicate bracket pair
                     return;
                 }
                 else{
                     while(st.peek()!='('){
-                        st.pop();
+                        st.pop();                          //popping out the content
                     }
-                    st.pop();
+                    st.pop();                            //popping out the bracket
                 }
             }
             else{
-                st.push(c);
+                st.push(c);                             //pushing the content in stack
             }
         }
         

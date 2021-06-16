@@ -45,7 +45,7 @@ public class BalancedBrackets {
     }
     
     public static boolean bracket(Stack<Character> st,char c){
-        if(st.size()==0){                             //if the size of stack is zero it means there is an extra closing bracket
+        if(st.size()==0){                             //if the size of stack is zero,it means there is an extra closing bracket
             return false;
         }
         else if(st.peek()!=c){
