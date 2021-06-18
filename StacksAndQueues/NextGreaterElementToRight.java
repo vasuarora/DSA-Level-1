@@ -23,7 +23,7 @@ public class NextGreaterElementToRight {
         display(nge);
      }
      
-     // nge = > next greater element
+     // nge = > next greater element to the right
 
      public static int[] solve(int[] arr){
        int[] nge=new int[arr.length];                   //creating an array of nge of each element
