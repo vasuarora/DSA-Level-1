@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch InfixEvaluation",
+            "request": "launch",
+            "mainClass": "InfixEvaluation",
+            "projectName": "DSA_7abaf5b7"
+        },
+        {
+            "type": "java",
             "name": "Launch CelebrityProblem",
             "request": "launch",
             "mainClass": "CelebrityProblem",
