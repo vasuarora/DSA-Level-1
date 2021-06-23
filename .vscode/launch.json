@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch MinimumStack",
+            "request": "launch",
+            "mainClass": "MinimumStack",
+            "projectName": "DSA_7abaf5b7"
+        },
+        {
+            "type": "java",
             "name": "Launch DynamicStack",
             "request": "launch",
             "mainClass": "DynamicStack",
