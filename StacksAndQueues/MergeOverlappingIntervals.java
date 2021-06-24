@@ -1,6 +1,6 @@
 import java.util.*;
 import java.io.*;
-public class MergeOverlapptingIntervals {
+public class MergeOverlappingIntervals {
     public static class Interval implements Comparable<Interval>{
         int st;
         int et;

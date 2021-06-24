@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch MergeOverlappingIntervals",
+            "request": "launch",
+            "mainClass": "MergeOverlappingIntervals",
+            "projectName": "DSA_7abaf5b7"
+        },
+        {
+            "type": "java",
             "name": "Launch SmallestNumberFollowingPattern",
             "request": "launch",
             "mainClass": "SmallestNumberFollowingPattern",
