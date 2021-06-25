@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch QueueToStackPopEfficient",
+            "request": "launch",
+            "mainClass": "QueueToStackPopEfficient",
+            "projectName": "DSA_7abaf5b7"
+        },
+        {
+            "type": "java",
+            "name": "Launch QueueToStackPopEffiecient",
+            "request": "launch",
+            "mainClass": "QueueToStackPopEffiecient",
+            "projectName": "DSA_7abaf5b7"
+        },
+        {
+            "type": "java",
             "name": "Launch QueueToStackPushEfficient",
             "request": "launch",
             "mainClass": "QueueToStackPushEfficient",
