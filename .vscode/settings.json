@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
         "TimeAndSpaceComplexity",
+        "StacksAndQueues",
         "Recursion/Recursion_With_Backtracking",
         "Recursion/Recursion_With_Arrays",
         "Recursion/Recursion_With_ArrayLists",
@@ -13,6 +14,6 @@
         "Arrays",
         "ArrayList_And_Strings",
         "2D_Arrays",
-        "StacksAndQueues"
+        "LinkedList"
     ]
 }
