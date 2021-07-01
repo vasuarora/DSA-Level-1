@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch RemoveLast",
+            "request": "launch",
+            "mainClass": "RemoveLast",
+            "projectName": "DSA_7abaf5b7"
+        },
+        {
+            "type": "java",
+            "name": "Launch RemoveFirst",
+            "request": "launch",
+            "mainClass": "RemoveFirst",
+            "projectName": "DSA_7abaf5b7"
+        },
+        {
+            "type": "java",
             "name": "Launch GetValueInLinkedList",
             "request": "launch",
             "mainClass": "GetValueInLinkedList",
