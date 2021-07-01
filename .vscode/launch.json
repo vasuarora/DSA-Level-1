@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch GetValueInLinkedList",
+            "request": "launch",
+            "mainClass": "GetValueInLinkedList",
+            "projectName": "DSA_7abaf5b7"
+        },
+        {
+            "type": "java",
             "name": "Launch AddAtIndex",
             "request": "launch",
             "mainClass": "AddAtIndex",
