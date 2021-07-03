@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch LInkedListToQueueAdapter",
+            "request": "launch",
+            "mainClass": "LInkedListToQueueAdapter",
+            "projectName": "DSA_7abaf5b7"
+        },
+        {
+            "type": "java",
             "name": "Launch LInkedListToStackAdapter",
             "request": "launch",
             "mainClass": "LInkedListToStackAdapter",
