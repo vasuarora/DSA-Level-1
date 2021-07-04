@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class MergeSort {
+public class MergeSortLinkedList {
     public static class Node {
         int data;
         Node next;

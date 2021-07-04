@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch MergeSortLinkedList",
+            "request": "launch",
+            "mainClass": "MergeSortLinkedList",
+            "projectName": "DSA_7abaf5b7"
+        },
+        {
+            "type": "java",
             "name": "Launch MergeTwoSortedLinkedList",
             "request": "launch",
             "mainClass": "MergeTwoSortedLinkedList",
