@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch IntersectionOfTwoLinkedList",
+            "request": "launch",
+            "mainClass": "IntersectionOfTwoLinkedList",
+            "projectName": "DSA_7abaf5b7"
+        },
+        {
+            "type": "java",
             "name": "Launch AddTwoLinkedList",
             "request": "launch",
             "mainClass": "AddTwoLinkedList",
