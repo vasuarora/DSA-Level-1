@@ -9,11 +9,12 @@
         "Recursion/Introduction_To_Recursion",
         "Patterns",
         "Number_System",
+        "LinkedList",
         "Getting_Started",
         "DynamicProgrammingAndGreedy",
         "Arrays",
         "ArrayList_And_Strings",
         "2D_Arrays",
-        "LinkedList"
+        "GenericTree"
     ]
 }
