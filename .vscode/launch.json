@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch Traversal",
+            "request": "launch",
+            "mainClass": "Traversal",
+            "projectName": "DSA_7abaf5b7"
+        },
+        {
+            "type": "java",
             "name": "Launch HeightOfGenericTree",
             "request": "launch",
             "mainClass": "HeightOfGenericTree",
