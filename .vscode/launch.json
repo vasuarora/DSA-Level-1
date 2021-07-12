@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch FindInGenericTree",
+            "request": "launch",
+            "mainClass": "FindInGenericTree",
+            "projectName": "DSA_7abaf5b7"
+        },
+        {
+            "type": "java",
             "name": "Launch LinearizeGenericTree",
             "request": "launch",
             "mainClass": "LinearizeGenericTree",
