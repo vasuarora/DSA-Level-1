@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch AreTreesSimilarInShape",
+            "request": "launch",
+            "mainClass": "AreTreesSimilarInShape",
+            "projectName": "DSA_7abaf5b7"
+        },
+        {
+            "type": "java",
+            "name": "Launch DistanceBetweenTwoNodes",
+            "request": "launch",
+            "mainClass": "DistanceBetweenTwoNodes",
+            "projectName": "DSA_7abaf5b7"
+        },
+        {
+            "type": "java",
             "name": "Launch LowestCommonAncestor",
             "request": "launch",
             "mainClass": "LowestCommonAncestor",
