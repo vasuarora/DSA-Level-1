@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch CeilAndFloor",
+            "request": "launch",
+            "mainClass": "CeilAndFloor",
+            "projectName": "DSA_7abaf5b7"
+        },
+        {
+            "type": "java",
             "name": "Launch PredecessorAndSuccessor",
             "request": "launch",
             "mainClass": "PredecessorAndSuccessor",
