@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch NodeWithMaxSumSubtree",
+            "request": "launch",
+            "mainClass": "NodeWithMaxSumSubtree",
+            "projectName": "DSA_7abaf5b7"
+        },
+        {
+            "type": "java",
             "name": "Launch KthLargestElement",
             "request": "launch",
             "mainClass": "KthLargestElement",
