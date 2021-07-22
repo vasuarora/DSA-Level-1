@@ -11,10 +11,11 @@
         "Number_System",
         "LinkedList",
         "Getting_Started",
+        "GenericTree",
         "DynamicProgrammingAndGreedy",
         "Arrays",
         "ArrayList_And_Strings",
         "2D_Arrays",
-        "GenericTree"
+        "BinaryTree"
     ]
 }
