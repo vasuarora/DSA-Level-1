@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class PrintSingleChildNodes {
+public class RemoveLeavesInBinaryTree {
     public static class Node {
         int data;
         Node left;
@@ -79,16 +79,19 @@ public class PrintSingleChildNodes {
         display(node.right);
       }
     
-      public static void printSingleChildNodes(Node node, Node parent){
+      public static Node removeLeaves(Node node){
         if(node==null){
-            return;
+            return null;
         }
         
-        if((parent!=null && parent.left==null && parent.right ==node) || (parent!=null && parent.left==node && parent.right==null)){
-            System.out.println(node.data);
+        if(node.left==null && node.right==null){
+            return null;
         }
-        printSingleChildNodes(node.left,node);
-        printSingleChildNodes(node.right,node);
+        
+        node.left=removeLeaves(node.left);
+        node.right=removeLeaves(node.right);
+        
+        return node;
       }
     
       public static void main(String[] args) throws Exception {
@@ -105,6 +108,7 @@ public class PrintSingleChildNodes {
         }
     
         Node root = construct(arr);
-        printSingleChildNodes(root, null);
+        root = removeLeaves(root);
+        display(root);
       }
 }
