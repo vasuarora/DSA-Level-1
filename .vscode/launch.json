@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch IsBalancedTree",
+            "request": "launch",
+            "mainClass": "IsBalancedTree",
+            "projectName": "DSA_7abaf5b7"
+        },
+        {
+            "type": "java",
+            "name": "Launch DiameterOfBinaryTree",
+            "request": "launch",
+            "mainClass": "DiameterOfBinaryTree",
+            "projectName": "DSA_7abaf5b7"
+        },
+        {
+            "type": "java",
             "name": "Launch TransformToNormalFromLeftCloned",
             "request": "launch",
             "mainClass": "TransformToNormalFromLeftCloned",
