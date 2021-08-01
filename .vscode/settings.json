@@ -13,9 +13,10 @@
         "Getting_Started",
         "GenericTree",
         "DynamicProgrammingAndGreedy",
+        "BinaryTree",
         "Arrays",
         "ArrayList_And_Strings",
         "2D_Arrays",
-        "BinaryTree"
+        "BinarySearchTree"
     ]
 }
