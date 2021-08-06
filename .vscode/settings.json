@@ -14,9 +14,10 @@
         "GenericTree",
         "DynamicProgrammingAndGreedy",
         "BinaryTree",
+        "BinarySearchTree",
         "Arrays",
         "ArrayList_And_Strings",
         "2D_Arrays",
-        "BinarySearchTree"
+        "HashmapAndHeap"
     ]
 }
