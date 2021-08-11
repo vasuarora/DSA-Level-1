@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch HasPath",
+            "request": "launch",
+            "mainClass": "HasPath",
+            "projectName": "DSA_7abaf5b7"
+        },
+        {
+            "type": "java",
             "name": "Launch MergeKSortedList",
             "request": "launch",
             "mainClass": "MergeKSortedList",

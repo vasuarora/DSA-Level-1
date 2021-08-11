@@ -10,6 +10,7 @@
         "Patterns",
         "Number_System",
         "LinkedList",
+        "HashmapAndHeap",
         "Getting_Started",
         "GenericTree",
         "DynamicProgrammingAndGreedy",
@@ -18,6 +19,6 @@
         "Arrays",
         "ArrayList_And_Strings",
         "2D_Arrays",
-        "HashmapAndHeap"
+        "Graphs"
     ]
 }
