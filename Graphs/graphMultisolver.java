@@ -1,7 +1,7 @@
 import java.util.*;
 import java.io.*;
 
-public class graphMultisolver {
+public class GraphMultisolver {
     static class Edge {
         int src;
         int nbr;
