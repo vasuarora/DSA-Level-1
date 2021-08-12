@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch graphMultisolver",
+            "request": "launch",
+            "mainClass": "graphMultisolver",
+            "projectName": "DSA_7abaf5b7"
+        },
+        {
+            "type": "java",
             "name": "Launch Search2dMatrixEfficient",
             "request": "launch",
             "mainClass": "Search2dMatrixEfficient",
