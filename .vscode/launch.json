@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch MinCostToConnectCitites",
+            "request": "launch",
+            "mainClass": "MinCostToConnectCitites",
+            "projectName": "DSA_7abaf5b7"
+        },
+        {
+            "type": "java",
             "name": "Launch IsGraphConnected",
             "request": "launch",
             "mainClass": "IsGraphConnected",

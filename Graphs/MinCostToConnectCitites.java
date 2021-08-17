@@ -11,7 +11,6 @@ public class MinCostToConnectCitites {
           this.wt = wt;
         }
     
-        @Override
         public int compareTo(Edge o) {
           return this.wt - o.wt;
         }
